@@ -1,0 +1,250 @@
+@import url("../Colours.css");
+
+.infocard-background{
+    background: linear-gradient(180deg, var(--backgroundGreen) 40%, #ffff 0%);
+}
+
+.infocard-container h2{
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 600;
+    
+}
+.infocard-container h3{
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 600;
+    
+}
+.development > p{
+    font-family: 'Titillium Web', sans-serif;
+    line-height: 2vw;
+}
+.development h3{
+    color: var(--rubyRed);
+}
+.design > p{
+    font-family: 'Titillium Web', sans-serif;
+    line-height: 2vw;
+}
+.design h3{
+    color: var(--lightGreen);
+}
+/*So that grid only applies on bigger screens*/
+@media screen and (min-width: 961px) {
+    .infocard-container{
+        margin: 8rem;
+        margin-top: -1.5rem;
+        padding: 2rem;
+        background: #fff;
+        border: 1px solid #7B7B7B;
+        border-radius: 20px;
+        box-shadow: 0 6px 10px rgba(0,0,0,0.25);
+        -webkit-filter: drop-shadow(0 6px 10px rgba(0,0,0,0.25));
+        filter: drop-shadow(0 6px 10px rgba(0,0,0,0.25));  
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr 0.001fr 1fr;
+        
+    }
+
+    .development{
+        grid-column:1/2;
+        margin: 2rem;  
+        display: grid;
+        justify-content: center;
+    }
+
+    .design{
+        grid-column:3/4;
+        margin: 2rem;
+        display: grid;
+        justify-content: center;
+    }
+
+    .card-icon-wrapper > img{
+        width: 15vw;
+    }
+    .card-icon-wrapper{
+        height: 12vw;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+       
+    }
+    hr{
+        border: 1px solid #7B7B7B;
+        margin-top: -2rem;
+        margin-bottom: -2rem;
+    }
+
+    .infocard-container h2{
+        font-size: 2vw;
+        font-family: 'Titillium Web', sans-serif;
+        font-weight: 600;
+        margin:2vw;
+    }
+    
+    .infocard-container h3{
+        font-size: 1.5vw;
+        font-family: 'Titillium Web', sans-serif;
+        font-weight: 600;
+        margin:1.5vw;
+    }
+    
+    .development > p{
+        font-size: 1.3vw;
+        font-family: 'Titillium Web', sans-serif;
+        line-height: 2vw;
+        
+    }
+    
+    .infotext {
+        height: 7vw;
+        width: 28vw;
+    }
+
+    .design > p{
+        font-size: 1.3vw;
+        font-family: 'Titillium Web', sans-serif;
+        line-height: 2vw;
+    }
+    
+}
+@media screen and (min-width: 960px) and (max-width: 1200px){
+    .design > p{
+        font-size: 1.5vw;
+    }
+
+    .development > p{
+        font-size: 1.5vw;
+    }
+
+    .infocard-container{
+        margin: 3rem;
+        margin-top: -3rem;
+    }
+}
+
+
+@media screen and (max-width: 960px) and (min-width:700px){
+
+    .infocard-container{
+        margin: 4rem;
+        margin-top: -1.5rem;
+        padding: 2rem;
+        background: #fff;
+        border: 1px solid #7B7B7B;
+        border-radius: 20px;
+        /*Drop shadow*/
+        /* ORIGINAL: 
+        box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
+        -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+        filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));*/
+        box-shadow: 0 6px 10px rgba(0,0,0,0.25);
+        -webkit-filter: drop-shadow(0 6px 10px rgba(0,0,0,0.25));
+        filter: drop-shadow(0 6px 10px rgba(0,0,0,0.25));  
+        text-align: center;
+    }
+
+    /*Line between*/
+    hr{
+        border: 1px solid #7B7B7B;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        margin-left: -2rem;
+        margin-right: -2rem;
+    }
+    
+    .infocard-container h2{
+        font-size: 5vw;
+        margin:2vw;
+    }
+
+    .infocard-container h3{
+        font-size: 3.5vw;
+        margin:2vw;
+    }
+
+    .development > p{
+        font-size: 3vw;
+        line-height: 5vw;
+    }
+
+    .development .text2 {
+        padding-bottom: 1.5rem;
+    }
+
+    .design > p{
+        font-size: 3vw;
+        line-height: 5vw;
+    }
+    .design .card-icon-wrapper > img{
+        padding-top: 1.5rem;
+        height: 20vw;
+    }
+    .development .card-icon-wrapper > img{
+        height: 20vw;
+    }
+
+
+}
+
+
+@media screen and (max-width: 700px){
+
+    .infocard-container{
+        margin: 1.5rem;
+        margin-top: -1.5rem;
+        padding: 2rem;
+        background: #fff;
+        border: 1px solid #7B7B7B;
+        border-radius: 20px;
+        /*Drop shadow*/
+        /* ORIGINAL: 
+        box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
+        -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+        filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));*/
+        box-shadow: 0 6px 10px rgba(0,0,0,0.25);
+        -webkit-filter: drop-shadow(0 6px 10px rgba(0,0,0,0.25));
+        filter: drop-shadow(0 6px 10px rgba(0,0,0,0.25));  
+        text-align: center;
+    }
+    /*Line between*/
+    hr{
+        border: 1px solid #7B7B7B;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        margin-left: -2rem;
+        margin-right: -2rem;
+    }
+
+    .infocard-container h2{
+        font-size: 6vw;
+        margin:2vw;
+    }
+
+    .infocard-container h3{
+        font-size: 4.5vw;
+        margin:2vw;
+    }
+
+    .development > p{
+        font-size: 4vw;
+        line-height: 6vw;
+    }
+
+    .development .text2 {
+        padding-bottom: 1.5rem;
+    }
+
+    .design > p{
+        font-size: 4vw;
+        line-height: 6vw;
+    }
+    .design .card-icon-wrapper > img{
+        padding-top: 1.5rem;
+        height: 25vw;
+    }
+    .development .card-icon-wrapper > img{
+        height: 25vw;
+    }
+}

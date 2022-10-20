@@ -1,0 +1,227 @@
+@import "https://unpkg.com/open-props";
+
+
+@media screen and (min-width: 700px){
+
+    .project_image{
+        width: 13vw;
+    }
+
+    .vertical > img{
+        width: 15vw;
+    }
+    .horisontal > img{
+        height:12vw;
+    }
+
+    .information_wrapper{
+        display: grid;
+        gap:5rem;
+        margin-inline: 10rem;
+        margin-top: 5rem;
+        margin-bottom: 3rem;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .last{
+        grid-column: 1/3;
+        justify-content: center;
+    }
+
+    .information_text > h3{
+        font-size: 2vw;
+        text-align: center;
+        margin-bottom: 1rem;
+        font-family: 'Titillium Web', sans-serif;
+        font-weight: 600;
+    }
+    
+    .information_text > p{
+        font-size: 1.3vw;
+        text-align: center;
+    }
+
+    .detail_headertext{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }
+    .detail_headertext > p{
+        justify-self: center;
+        margin-right: 1rem;
+        color:gray;
+        font-size: 1.5vw;
+        font-family: 'Titillium Web', sans-serif;
+    }
+    .detail_headertext > h2{
+        justify-self: center;
+        margin-right: 1rem;
+        font-size: 2.5vw;
+        font-family: 'Titillium Web', sans-serif;
+    }
+
+    .header_intro > p{
+        margin-bottom: 2rem;
+        font-size: 1.5vw;
+        font-family: 'Titillium Web', sans-serif;
+    }
+
+    .header_intro{
+        display: grid;
+        grid-template-columns: 0.5fr 1fr;
+        align-items: center;
+        margin-inline:10rem;
+        gap: 1rem;
+    }
+    
+    .detail_wrapper > h3{
+        font-size: 2vw;
+        text-align: center;
+        margin-bottom: 1rem;
+        font-family: 'Titillium Web', sans-serif;
+        font-weight: 600;
+    }
+
+    .image_scroller{
+        grid-auto-columns: 30%;
+        gap:1rem;
+    }
+    .centered{
+        justify-content: center;
+    }
+
+    .development_icons{ 
+        margin-inline: 20rem;
+        margin-top: 4rem;
+        margin-bottom: 2rem;
+        height: 4vw;
+    }
+    
+
+}
+@media screen and (max-width: 700px){
+    .development_icon{
+        width:3.5rem;
+    }
+
+    .vertical > img{
+        width: 40vw;
+    }
+    .horisontal > img{
+        height: 40vw;
+    }
+
+    .project_image{
+        width: 30vw;
+    }
+
+    .information_text > h3{
+        font-size: 5vw;
+        text-align: center;
+        margin-bottom: 1rem;
+        font-family: 'Titillium Web', sans-serif;
+        font-weight: 600;
+    }
+    
+    .information_text > p{
+        font-size: 4vw;
+        text-align: center;
+    }
+
+    .detail_headertext{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }
+    .detail_headertext > p{
+        justify-self: center;
+        margin-right: 10rem;
+        color:gray;
+        font-size: 5vw;
+        font-family: 'Titillium Web', sans-serif;
+    }
+    
+    .detail_wrapper > h3{
+        font-size: 5vw;
+        text-align: center;
+        margin-bottom: 1rem;
+        font-family: 'Titillium Web', sans-serif;
+        font-weight: 600;
+    }
+    
+    .header_intro > p{
+        margin-bottom: 2rem;
+        font-size: 4vw;
+        font-family: 'Titillium Web', sans-serif;
+    }
+
+    .image_scroller{
+        grid-auto-columns: 90%;
+        gap:1rem;
+    }
+
+    .information_wrapper{
+        display: grid;
+        gap:2rem;
+        margin:1rem;
+    }
+
+    .development_icons{ 
+        margin-inline: 3rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+    .header_intro{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        align-items: center;
+        gap: 1rem;
+    }
+
+}
+
+
+.development_icons{
+    display: flex;
+    justify-content:space-evenly;
+    align-items:stretch;
+    align-content: center;
+}
+
+
+.detail_header{
+    margin-inline:1rem;
+}
+
+
+.image_scroller{
+    display: grid;
+    grid-auto-flow: column;
+   /* grid-auto-columns: 90%;
+    gap:1rem;*/
+
+    overflow-x: auto;
+    /*This stops the scrolling when we get to the end of container*/
+    /* Means i cant scroll other elements while scrolling in container*/
+    overscroll-behavior-inline: contain;
+}
+
+.scroller_element{
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.scroller_element > img{
+    box-shadow: var(--shadow-2);
+}
+
+.horisontal{
+    display: grid;
+    align-items: center;
+}
+.snaps-inline{
+    scroll-snap-type: inline mandatory;
+    scroll-padding-inline: 1rem;
+}
+.snaps-inline > *{
+    scroll-snap-align:start;
+}
