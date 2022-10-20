@@ -5,7 +5,11 @@ import EducationSection from '../EducationSection';
 import InfoCardSection from '../InfoCardSection';
 import ProjectSection from '../ProjectSection';
 import Footer from '../Footer';
+import { useEffect } from 'react';
 function Home(){
+    useEffect(() => {
+        document.title = 'Emmy Lindgren';
+      });
     return(
         <>
             <HeroSection/>
