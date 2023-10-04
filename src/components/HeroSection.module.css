@@ -1,7 +1,6 @@
 p{
     font-size: 1.5vw;
 }
-
 .container{
     height: calc(100vh - 80px);
     width: 100%;
@@ -9,6 +8,7 @@ p{
     grid-gap: 10px;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: 1fr 1fr;
+    max-width: 2800px;
 }
 
 .heading{
@@ -51,10 +51,9 @@ p{
         grid-row:1;
         grid-column: 1;
         padding-left: 20px;
-
     }
     .heading h2{
-        font-size: 8vw;
+        font-size: 5vw;
     }
     .text{
         padding-left: 20px;
@@ -72,18 +71,18 @@ p{
         grid-row:3;
         grid-column: 1;
         align-self: end; 
+        justify-self:center;
     }
 }
 
-@media screen and (max-width: 1400px){
-    p{
-        font-size: 2vw;
-    }
-  }
+
 
 @media screen and (max-width: 600px) {
     p{
         font-size: 4.5vw;
+    }
+    .heading h2{
+        font-size: 8vw;
     }
     .profilePic{
         object-fit:cover;
