@@ -1,12 +1,23 @@
 /*Import of Font family Titillium Web from google.*/
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;600&display=swap');
-* {
+
+/*Import of Font family Montserrat from google.*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+/*
+  Light: 300
+  Regular: 400 
+  Medium: 500
+*/
+*{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
+h1,h2,h3,h4{
+  color:#131313;
+}
 .home,
 .services,
 .products,
@@ -46,6 +57,6 @@
 }
 
 p{
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 300;
 }
