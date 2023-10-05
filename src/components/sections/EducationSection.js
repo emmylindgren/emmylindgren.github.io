@@ -1,6 +1,6 @@
 import React from 'react';
 import './EducationSection.css';
-import '../App.css';
+import '../../App.css';
 
 function EducationSection() {
   return (

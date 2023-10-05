@@ -1,9 +1,9 @@
 import React from 'react';
 import '../../App.css';
-import HeroSection from '../HeroSection';
-import EducationSection from '../EducationSection';
-import InfoCardSection from '../InfoCardSection';
-import ProjectSection from '../ProjectSection';
+import HeroSection from '../sections/HeroSection';
+import EducationSection from '../sections/EducationSection';
+import InfoCardSection from '../sections/InfoCardSection';
+import ProjectSection from '../sections/projects/ProjectSection';
 import Footer from '../Footer';
 import { useEffect } from 'react';
 function Home(){

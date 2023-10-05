@@ -1,6 +1,6 @@
 import React from 'react';
 import './InfoCardSection.css';
-import '../App.css';
+import '../../App.css';
 
 function InfoCardSection() {
   return (
