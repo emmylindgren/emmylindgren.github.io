@@ -1,0 +1,94 @@
+@import url("../../Colours.css");
+
+.container{
+    min-height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.innerContainer{
+    margin-left: 10vw;
+    display: flex;
+    justify-content: center;
+}
+.aboutMeContainer{
+    height: 40vw;
+    width: 40vw;
+    border-radius: 50%;
+    background-color: var(--pastelGreen);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutMeText{
+    margin:20px;
+    text-align: center;
+}
+
+.smileyContainer{
+    height: 10vw;
+    width: 10vw;
+    border-radius: 50%;
+    background-color: var(--pastelGreen);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.smileyContainer p{
+    font-weight: 500;
+    transform: rotate(90deg);
+    font-size: 4vw;
+}
+
+@media screen and (max-width: 960px) {
+    /*TODO: Take care of this, half screen.*/
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .innerContainer{
+        margin-left: 0;
+        flex-direction: column-reverse;
+        background-color: green;
+    }
+    .aboutMeContainer{
+        height: 100vw;
+        width: 100vw;
+        margin-left: -20vw;
+        border-radius: 50%;
+        background-color: var(--pastelGreen);
+        display: flex;
+        flex-direction: column;
+        align-self: flex-start;
+    }
+    
+    .aboutMeText{
+        margin:20px;
+        margin-left: 25vw;
+        text-align: left;
+    }
+    
+    .smileyContainer{
+        height: 40vw;
+        width: 40vw;
+        border-radius: 50%;
+        background-color: var(--pastelGreen);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 20px;
+        align-self: flex-end;
+    }
+    
+    .smileyContainer p{
+        font-weight: 500;
+        transform: rotate(90deg);
+        font-size: 4vw;
+    }
+}

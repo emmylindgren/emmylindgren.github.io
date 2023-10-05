@@ -77,12 +77,13 @@ function Navbar() {
           </div>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
 
-            {/**TODO: Ändra länken här sedan! */}
-            <li className='nav-item'>
-                <LinkFromOtherPage className='nav-links' onClick={closeMobileMenu} to="./" >
+            {!homepage && 
+                <li className='nav-item'>
+                <LinkFromOtherPage className='nav-links' onClick={closeMobileMenu} to="./#aboutMeSection" spy={true} smooth={homepage? true:false} duration={800}>
                         Om mig
                 </LinkFromOtherPage>
-            </li>
+                </li>
+            }
 
             {!homepage && 
 
@@ -101,6 +102,13 @@ function Navbar() {
                 </li>
             }
 
+            {homepage && 
+                <li className='nav-item'>
+                    <Link className='nav-links' onClick={closeMobileMenu} to="aboutMeSection" spy={true} smooth={homepage? true:false} duration={800}>
+                            Om mig
+                    </Link>
+                </li>
+            }
             {homepage && 
                 <li className='nav-item'>
                     <Link className='nav-links' onClick={closeMobileMenu} to="educationSection" spy={true} smooth={homepage? true:false} duration={800}>

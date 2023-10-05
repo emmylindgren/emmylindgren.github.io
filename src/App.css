@@ -60,3 +60,26 @@ p{
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
 }
+
+/*TODO: Bestäm max-bredd här och sen fixa så de är på alla sidor.*/
+.mainContainer{
+  padding-inline: 40px;
+  max-width: 1400px;
+}
+
+.sectionHeading{
+  font-weight: 500;
+  font-size: 2vw;
+  margin-top: 5px;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 960px) {
+  .sectionHeading{
+    font-size: 6vw;
+  }
+
+  .mainContainer{
+    padding-inline: 10px;
+  }
+}
