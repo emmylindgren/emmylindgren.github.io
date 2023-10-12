@@ -1,6 +1,3 @@
-/*Import of Font family Titillium Web from google.*/
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;600&display=swap');
-
 /*Import of Font family Montserrat from google.*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
 /*
@@ -18,6 +15,7 @@
 h1,h2,h3,h4{
   color:#131313;
 }
+/*
 .home,
 .services,
 .products,
@@ -55,31 +53,41 @@ h1,h2,h3,h4{
   color: #fff;
   font-size: 100px;
 }
-
+*/
 p{
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
+  font-size: 27px;
 }
 
 /*TODO: Bestäm max-bredd här och sen fixa så de är på alla sidor.*/
 .mainContainer{
   padding-inline: 40px;
-  max-width: 1400px;
 }
 
 .sectionHeading{
   font-weight: 500;
-  font-size: 2vw;
-  margin-top: 5px;
+  font-size: 39px;
+  padding-top: 10px;
   text-transform: uppercase;
 }
 
 @media screen and (max-width: 960px) {
-  .sectionHeading{
-    font-size: 6vw;
-  }
-
   .mainContainer{
     padding-inline: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .sectionHeading{
+    padding-top: 15px;
+    font-size: 6vw;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .mainContainer{
+    max-width: 1800px;
+    margin: 0 auto;
   }
 }

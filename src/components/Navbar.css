@@ -2,6 +2,9 @@
 * {
   -webkit-tap-highlight-color: transparent;
 }
+/*
+  TODO: Clean up this file. 
+*/
 .navbar {
   background: transparent;
   height: 120px;
@@ -10,6 +13,7 @@
   align-items: center;
   top: 0;
   z-index: 999;
+  max-width: 2800px;
 }
 
 .navbar-container {
@@ -45,7 +49,7 @@
   align-items: center;
   text-decoration: none;
   padding: 0.5rem 1rem;
-  font-size: 1.2vw;
+  font-size: 25px;
   height: 100%;
   transition: all 0.5s ease-out;
   text-transform: uppercase;
