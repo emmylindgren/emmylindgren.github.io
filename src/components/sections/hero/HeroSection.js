@@ -13,7 +13,7 @@ function HeroSection() {
       <div className={styles.text}>
         <p>Civilingenjörsstudent inom interaktion och design</p>
       </div>
-      <img className={styles.profilePic}src="pictures/profilePicture.jpg" alt='Profile'/>
+      <img className={styles.profilePic} src="pictures/profilePicture.jpg" alt='Profile'/>
     </div>
   )
 }

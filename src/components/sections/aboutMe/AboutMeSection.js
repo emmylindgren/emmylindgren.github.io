@@ -4,7 +4,7 @@ import styles from './AboutMeSection.module.css';
 
 function AboutMeSection() {
   return (
-    <div className={'mainContainer ' + styles.AboutMeSection}  id='aboutMeSection'>
+    <div className={'mainContainer ' + styles.AboutMeSection} id="aboutMeSection">
         <h2 className='sectionHeading'>Om mig</h2>
         <div className={styles.container}>
             <div className={styles.innerContainer}>

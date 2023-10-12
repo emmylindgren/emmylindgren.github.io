@@ -1,26 +1,26 @@
 import React from 'react';
-import './Footer.css';
-import { Link } from 'react-router-dom';
+import styles from './Footer.module.css';
 
 function Footer() {
   return (
-    <div className='footer-container' id='footerSection'>
-        <section className='footer-header'>
-            <h2>Kontakta mig</h2>
+    <div className={styles.footerContainer} id='footerSection'>
+        <section className={styles.header}>
+            <h2>Hör av dig</h2>
         </section>
-        <section className='footer-email'>
-            <h3>Mail</h3>
-            <a href="mailto:emmy.lindgren@hotmail.com">emmy.lindgren@hotmail.com</a>
-        </section>
-        <section className='footer-links'>
-            <li className='footer-nav-item'>
-                <a target="_blank" href="https://www.linkedin.com/in/emmylindgren/" className='footer-nav-links-icon'>
-                    <img src="icons/LinkedinIcon.svg" className="footer-imageIcon" alt="Linkedin icon" />
+        <section className={styles.links}>
+            <li className={styles.navItem}>
+                <a href="mailto:emmy.lindgren@hotmail.com" className='footer-nav-links-icon' rel="noreferrer">
+                    <img src="icons/mailIcon.svg" className={styles.imageIcon} alt="Mail icon"/>
                 </a>
             </li>
-            <li className='footer-nav-item'>
-                <a target="_blank" href="https://github.com/emmylindgren" className='footer-nav-links-icon'>
-                    <img src="icons/GithubIcon.svg" className="footer-imageIcon" alt="Github icon"/>
+            <li className={styles.navItem}>
+                <a target="_blank" href="https://www.linkedin.com/in/emmylindgren/" className='footer-nav-links-icon' rel="noreferrer">
+                    <img src="icons/LinkedinIcon.svg" className={styles.imageIcon} alt="Linkedin icon" />
+                </a>
+            </li>
+            <li className={styles.navItem}>
+                <a target="_blank" href="https://github.com/emmylindgren" className='footer-nav-links-icon' rel="noreferrer">
+                    <img src="icons/GithubIcon.svg" className={styles.imageIcon} alt="Github icon"/>
                 </a>
             </li>
         </section>

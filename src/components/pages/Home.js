@@ -16,7 +16,7 @@ function Home(){
             <HeroSection/>
             <AboutMeSection/>
             <EducationSection id='education'/>
-            <InfoCardSection/>
+            {/** Outcommented for now to focus on education section<InfoCardSection/>*/}
             <ProjectSection/>
             <Footer/>
         </>

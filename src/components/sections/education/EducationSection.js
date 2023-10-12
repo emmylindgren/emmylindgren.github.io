@@ -1,21 +1,18 @@
 import React from 'react';
-import './EducationSection.css';
+import styles from './EducationSection.module.css';
 import '../../../App.css';
 
 function EducationSection() {
   return (
-    <div className='education-container' id="educationSection">
-        <h2 className='education-headline'>Min utbildning</h2>
-        <div className='education-information'>
-          <img className ='education-img' src="icons/computerIconGreen.svg" alt="Computer icon"/>
-          <div className='education-text'>
-          <p>Jag gillar att lösa kluriga logiska problem, 
-              samtidigt som jag är väldigt intresserad av psykologi och kommunikation.</p> 
-              <p>Civilingenjörsprogrammet i interaktion och design är en bred civilingenjörsutbildning som 
-              behandlar mötet mellan människa och maskin. Att skapa hållbara, intuitiva och smidiga system helt enkelt.</p>
-          </div>
+    <div className={'mainContainer ' + styles.educationSection} id="educationSection">
+        <h2 className='sectionHeading'>Utbildning</h2>
+        <div className={styles.educationContainer}>
+            <img className={styles.IDLogo} alt= "ID-loggan på en bakgrund med cirklar"src='icons/IDLogo.png'/>
+            <h3 className={styles.header}>Interaktion & Design</h3>
+            <p className={styles.educationText}>Civilingenjörsprogrammet i interaktion och design är en bred civilingenjörsutbildning
+               som behandlar mötet mellan människa och maskin. Att skapa hållbara, intuitiva och smidiga system helt enkelt.</p>
         </div>
-  </div>
+    </div>
   )
 }
 

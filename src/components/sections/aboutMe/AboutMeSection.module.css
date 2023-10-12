@@ -49,7 +49,6 @@
 }
 
 @media screen and (max-width: 1200px) and (min-width:700px)  {
-    /*TODO: Take care of this, half screen.*/
     .AboutMeSection{
         min-height: 0;
     }

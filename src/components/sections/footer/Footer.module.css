@@ -1,0 +1,56 @@
+@import url("../../../Colours.css");
+
+.footerContainer{
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.header{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    letter-spacing: .1rem;
+    text-align: center;
+}
+.links{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+}
+
+.navItem{
+    margin:3vw;
+}
+
+@media screen and (min-width: 900px){
+
+    .footerContainer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .header{
+        grid-row: 1;
+        grid-column: 1/3;
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+
+    .links{
+        grid-row: 2;
+        align-items: flex-end;  
+    }
+
+    .imageIcon{
+        height: 65px;
+    }
+
+    .navItem{
+        margin:2.5vw;
+    }
+}
