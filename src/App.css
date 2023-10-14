@@ -57,7 +57,7 @@ h1,h2,h3,h4{
 p{
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
-  font-size: 27px;
+  font-size: 25px;
 }
 
 .mainContainer{
@@ -71,6 +71,12 @@ p{
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 1200px) {
+  p{
+    font-size: 23px;
+  }
+}
+
 @media screen and (max-width: 960px) {
   .mainContainer{
     padding-inline: 10px;
@@ -78,6 +84,9 @@ p{
 }
 
 @media screen and (max-width: 600px) {
+  p{
+    font-size: 4vw;
+  }
   .sectionHeading{
     padding-top: 15px;
     font-size: 6.5vw;

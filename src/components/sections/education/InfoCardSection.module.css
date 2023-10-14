@@ -1,0 +1,103 @@
+@import url("../../../Colours.css");
+
+.infoCardSection{
+    display: flex;
+    justify-content: center;
+}
+
+.infoCardContainer{
+    display: flex;
+    gap:150px;
+    padding-bottom: 20px;
+}
+
+.infoCard{
+    padding:10px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:10px;
+}
+
+.cardIcon{
+    width: 300px;
+}
+
+.cardHeadline{
+    font-size: 40px;
+    font-weight: 500;
+    padding-top: 20px;
+}
+
+.cardInfotext{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.subContainer{
+    width: 100%;
+    text-align: left;
+}
+
+.subContainerRight{
+    text-align: right;
+}
+
+.subText{
+    color: #4D4D4D;
+}
+
+.subHeadline{
+    font-size: 25px;
+    padding-bottom:5px;
+}
+
+.development .subHeadline{
+    color: var(--rubyRed);
+}
+
+.design .subHeadline{
+    color: var(--lightGreen);
+}
+
+@media screen and (max-width: 1400px){
+    .infoCard{
+        width: 500px;
+    }
+    .cardIcon{
+        width: 325px;
+    }
+    .infoCardContainer{
+        gap:50px;
+    }
+    .cardHeadline{
+        font-size: 30px;
+    }
+    .subHeadline{
+        font-size: 21px;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    .infoCardContainer{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .infoCard{
+        width: 90vw;
+        padding-inline: 0;
+    }
+    .cardHeadline{
+        font-size: 6vw;
+    }
+    .cardIcon{
+        width: 60vw;
+    }
+    .subHeadline{
+        font-size: 4vw;
+    }
+}
