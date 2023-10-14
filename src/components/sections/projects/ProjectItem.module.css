@@ -1,0 +1,46 @@
+/*
+TODO: Check this max-width later on
+*/
+.infoCardSection{
+    max-width: 1400px;
+    margin:auto;
+}
+.textWrapper h3{
+    font-weight: 600;
+    font-size: 40px;
+}
+.projectLink{
+    font-weight: 300;
+    font-size: 20px;
+    color:black;
+}
+
+.projectImg{
+    height: 400px;
+}
+
+.projectContainerRight{
+    display: flex;
+    justify-content: space-between;
+}
+
+.projectContainerLeft{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+.projectContainerLeft .textWrapper{
+    text-align: right;
+}
+
+.imageWrapper{
+    gap:200px;
+    background-color: red;
+}
+
+.textWrapper{
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

@@ -1,0 +1,23 @@
+.projectSection{
+    padding-bottom: 20px;
+}
+/*
+TODO: Check this math :) 
+*/
+.projectItem{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.projectItem:nth-child(1n){
+    background-color:#FDE7EF;
+}
+.projectItem:nth-child(2n){
+    background-color:#E0FAF6;
+}
+.projectItem:nth-child(3n){
+    background-color:#D8FCCF;
+}
+.projectItem:nth-child(4n + 1){
+    background-color:#F1D6ED;
+}

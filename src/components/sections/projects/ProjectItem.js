@@ -1,25 +1,32 @@
 import React from 'react';
+import styles from './ProjectItem.module.css';
 import {Link} from 'react-router-dom';
 
 function ProjectItem(props) {
   return (
-    <>
-        <li className={props.picsRight ? 'project_container_right' : 'project_container_left'}>
-        
-                <div className={props.pic2horisontal ? 'img_container_horisontal' : 'img_container_vertical'}>
-                <h2 className='project_headline'>{props.headline}</h2>
-                  <div className='project_img1'>
-                    <img alt="project"  src={props.srcImg_1}/>
-                  </div>
-                  <div className='project_img2'>
-                    <img alt="project 2" src={props.srcImg_2}/>
-                  </div>
-                  <p className='project_infotext'>{props.infoText}</p>
-                  <Link to={props.link} className='project_link'>Se mer</Link>
-                </div>    
-        </li> 
-    </>
+      <div className={'mainContainer ' + styles.infoCardSection}>
+        <div className={props.picsRight ? styles.projectContainerRight : styles.projectContainerLeft}>
+          <div className={styles.textWrapper}>
+            <p>{props.infoText}</p>
+            <h3>{props.headline}</h3>
+            <Link to={props.link} className={styles.projectLink}>Kolla in</Link>
+          </div>
+
+          <div className={styles.imageWrapper}>
+            <img alt="project" className={styles.projectImg} src={props.srcImg_1}/>
+            {props.srcImg_2 ? 
+              <img alt="project 2" className={styles.projectImg} src={props.srcImg_2}/>
+              : null
+            }
+          </div>
+
+        </div>
+      </div>
   );
 }
-
+/**
+ * Alternativ om du vill ha en för gemensam senare
+ * Annars är infoCardSection för båda så. 
+ * `${styles.projectContainer} ${props.picsRight ? styles.projectContainerRight : styles.projectContainerLeft}`
+ */
 export default ProjectItem;
