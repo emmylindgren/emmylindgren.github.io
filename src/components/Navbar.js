@@ -4,6 +4,8 @@ import './Navbar.css';
 import cv from './EmmyLindgrenCV.pdf';
 import { useNavigate } from 'react-router-dom'; 
 import { HashLink as LinkFromOtherPage } from 'react-router-hash-link';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faLinkedinIn,faGithubAlt} from '@fortawesome/free-brands-svg-icons';
 
 
 function Navbar() {
@@ -125,24 +127,22 @@ function Navbar() {
                 </li>
             }
 
-
             <li className='nav-item'>
                 <a className='nav-links' href={cv} target="_blank" rel="noreferrer">
                     CV
                 </a>
             </li>
 
-
             {icons && <li className='nav-item'>
                 <div className ='nav-item-icon'>
                     <li className='nav-item'>
-                        <a target="_blank" href="https://www.linkedin.com/in/emmylindgren/" className='nav-links-icon'  onClick={closeMobileMenu} rel="noreferrer">
-                                <img src="icons/LinkedinIcon.svg" className="imageIcon" alt="Linkedin icon" />
+                        <a target="_blank" href="https://www.linkedin.com/in/emmylindgren/"  onClick={closeMobileMenu} rel="noreferrer">
+                            <FontAwesomeIcon className='nav-links-icon' icon={faLinkedinIn} size="2xl"/>
                         </a>
                     </li>
                     <li className='nav-item'>
-                        <a target="_blank" href="https://github.com/emmylindgren" className='nav-links-icon'  onClick={closeMobileMenu} rel="noreferrer">
-                            <img src="icons/GithubIcon.svg" className="imageIcon" alt="Github icon"/>
+                        <a target="_blank" href="https://github.com/emmylindgren" onClick={closeMobileMenu} rel="noreferrer">
+                            <FontAwesomeIcon className='nav-links-icon' icon={faGithubAlt} size="2xl"/>
                         </a>
                     </li>
                 </div>

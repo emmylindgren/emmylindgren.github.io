@@ -1,29 +1,30 @@
 import React from 'react';
 import styles from './Footer.module.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faLinkedinIn,faGithubAlt} from '@fortawesome/free-brands-svg-icons';
+import {faEnvelope} from '@fortawesome/free-solid-svg-icons';
 
 function Footer() {
   return (
     <div className={styles.footerContainer} id='footerSection'>
-        <section className={styles.header}>
-            <h2>Hör av dig</h2>
-        </section>
-        <section className={styles.links}>
+        <h2 className={styles.header}>Hör av dig</h2>
+        <div className={styles.links}>
             <li className={styles.navItem}>
-                <a href="mailto:emmy.lindgren@hotmail.com" className='footer-nav-links-icon' rel="noreferrer">
-                    <img src="icons/mailIcon.svg" className={styles.imageIcon} alt="Mail icon"/>
+                <a href="mailto:emmy.lindgren@hotmail.com" rel="noreferrer">
+                    <FontAwesomeIcon className={styles.navIcon} icon={faEnvelope} size="2xl" />
                 </a>
             </li>
             <li className={styles.navItem}>
-                <a target="_blank" href="https://www.linkedin.com/in/emmylindgren/" className='footer-nav-links-icon' rel="noreferrer">
-                    <img src="icons/LinkedinIcon.svg" className={styles.imageIcon} alt="Linkedin icon" />
+                <a target="_blank" href="https://www.linkedin.com/in/emmylindgren/" rel="noreferrer">
+                    <FontAwesomeIcon className={styles.navIcon} icon={faLinkedinIn} size="2xl"/>
                 </a>
             </li>
             <li className={styles.navItem}>
-                <a target="_blank" href="https://github.com/emmylindgren" className='footer-nav-links-icon' rel="noreferrer">
-                    <img src="icons/GithubIcon.svg" className={styles.imageIcon} alt="Github icon"/>
+                <a target="_blank" href="https://github.com/emmylindgren" rel="noreferrer">
+                    <FontAwesomeIcon className={styles.navIcon} icon={faGithubAlt} size="2xl" />
                 </a>
             </li>
-        </section>
+        </div>
     </div>
   )
 }

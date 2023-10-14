@@ -13,7 +13,7 @@
 }
 
 h1,h2,h3,h4{
-  color:#131313;
+  color:var(--notQuiteBlack);
 }
 /*
 .home,
