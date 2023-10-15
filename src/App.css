@@ -6,6 +6,9 @@
   Medium: 500
   Semi bold: 600
 */
+:root{
+  --padding-on-main-container: 40px;
+}
 *{
   box-sizing: border-box;
   margin: 0;
@@ -24,7 +27,7 @@ p{
 }
 
 .mainContainer{
-  padding-inline: 40px;
+  padding-inline: var(--padding-on-main-container);
 }
 
 .sectionHeading{
@@ -41,8 +44,8 @@ p{
 }
 
 @media screen and (max-width: 960px) {
-  .mainContainer{
-    padding-inline: 10px;
+  :root{
+    --padding-on-main-container: 10px;
   }
 }
 

@@ -13,7 +13,7 @@ function AboutMeSection() {
                         <p>Emmy heter jag och är originellt från Skellefteå.  Efter att ha börjat studera beteendevetenskap i Umeå 2017, 
                             insåg jag mitt verkliga intresse för att lösa logiska problem. 
                             Därför bytte jag spår och går nu mitt sista år till civilingenjör. 
-                            Jag älskar att skapa digitala lösningar och mjukvaruapplikationer som löser praktiska problem, och samtidigt utmanar min kreativitet.
+                            Jag gillar att skapa digitala lösningar och mjukvaruapplikationer som löser praktiska problem, och samtidigt utmanar min kreativitet.
                         </p>
                     </div>
                 </div>

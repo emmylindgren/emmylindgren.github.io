@@ -19,8 +19,6 @@ function ProjectSection() {
                 srcImg_2 = 'hej.png'*/
                 /*If the pictures should be to the right (every other should be) */
                 picsRight = {true}
-                /*If picture nr 2, srcImg_2, is horisontal or vertically aligned */
-                pic2horisontal = {false}
                 infoText = 'En event-applikation designad för att minska ensamheten bland äldre i Australien.'
                 link = '/GreetUp'
             />
@@ -34,8 +32,6 @@ function ProjectSection() {
                 srcImg_2 = 'hej.png'*/
                 /*If the pictures should be to the right (every other should be) */
                 picsRight = {false}
-                /*If picture nr 2, srcImg_2, is horisontal or vertically aligned */
-                pic2horisontal = {false}
                 infoText = 'En event-applikation designad för att minska ensamheten bland äldre i Australien.'
                 link = '/GreetUp'
             />

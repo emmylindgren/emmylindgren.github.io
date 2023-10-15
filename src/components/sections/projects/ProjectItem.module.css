@@ -19,6 +19,14 @@ TODO: Check this max-width later on
     height: 400px;
 }
 
+.projectContainerRight .projectImg{
+    margin-left:20px;
+}
+
+.projectContainerLeft .projectImg{
+    margin-right:20px;
+}
+
 .projectContainerRight{
     display: flex;
     justify-content: space-between;
@@ -33,14 +41,27 @@ TODO: Check this max-width later on
     text-align: right;
 }
 
-.imageWrapper{
-    gap:200px;
-    background-color: red;
-}
-
 .textWrapper{
-    max-width: 600px;
+    max-width: 750px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+    .textWrapper h3{
+        font-size: 6.5vw;
+    }
+    .textWrapper p{
+        font-size: 3.5vw;
+    }
+    .projectLink{
+        font-size: 4.5vw;
+    }
+    .textWrapper{
+        gap:25px;
+    }
+    .projectImg{
+        height: 65vw;
+    }
 }

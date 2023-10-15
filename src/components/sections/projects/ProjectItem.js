@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './ProjectItem.module.css';
+import styles2 from './ProjectSection.module.css';
 import {Link} from 'react-router-dom';
 
 function ProjectItem(props) {
@@ -12,7 +13,7 @@ function ProjectItem(props) {
             <Link to={props.link} className={styles.projectLink}>Kolla in</Link>
           </div>
 
-          <div className={styles.imageWrapper}>
+          <div className={styles2.imageWrapper}>
             <img alt="project" className={styles.projectImg} src={props.srcImg_1}/>
             {props.srcImg_2 ? 
               <img alt="project 2" className={styles.projectImg} src={props.srcImg_2}/>

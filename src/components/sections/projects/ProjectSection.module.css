@@ -5,8 +5,9 @@
 TODO: Check this math :) 
 */
 .projectItem{
-    padding-top: 30px;
-    padding-bottom: 30px;
+    --padding-top-and-bottom: 50px;
+    padding-top: var(--padding-top-and-bottom);
+    padding-bottom: var(--padding-top-and-bottom);
 }
 
 .projectItem:nth-child(1n){
@@ -20,4 +21,35 @@ TODO: Check this math :)
 }
 .projectItem:nth-child(4n + 1){
     background-color:#F1D6ED;
+}
+
+@media screen and (max-width: 600px) {
+    .projectItem:nth-child(1n){
+        --padding-top-and-bottom: 2vw;
+        background-color: transparent;
+    }
+    .imageWrapper{
+        padding: 25px;
+        margin:5px;
+    }
+
+    .projectItem:nth-child(1n) .imageWrapper{
+        margin-right: calc((var(--padding-top-and-bottom) * -1));
+        border-radius: 20px 0px 0px 20px;
+        background-color:#FDE7EF;
+    }
+
+    .projectItem:nth-child(2n) .imageWrapper{
+        margin-right: 5px;
+        margin-left: calc((var(--padding-top-and-bottom) * -1));
+        border-radius: 0px 20px 20px 0px;
+        background-color:#E0FAF6;
+    }
+    .projectItem:nth-child(3n) .imageWrapper{
+        background-color:#D8FCCF;
+    }
+    .projectItem:nth-child(4n +1) .imageWrapper{
+        background-color:#F1D6ED;
+    }
+ 
 }
