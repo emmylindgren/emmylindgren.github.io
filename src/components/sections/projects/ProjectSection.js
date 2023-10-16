@@ -13,27 +13,58 @@ function ProjectSection() {
         <div className={styles.projectItem}>
             <ProjectItem
                 headline ="GreetUp"
-                srcImg_1 ='pictures/GreetUp/GreetUpStart.png'
-                srcImg_2 ='pictures/GreetUp/GreetUpComingUp.png'
-                /*srcImg_1 = 'hej.png'
-                srcImg_2 = 'hej.png'*/
+                srcImg_1 ='pictures/GreetUp/Start.png'
+                srcImg_2 ='pictures/GreetUp/Event.png'
                 /*If the pictures should be to the right (every other should be) */
                 picsRight = {true}
                 infoText = 'En event-applikation designad för att minska ensamheten bland äldre i Australien.'
                 link = '/GreetUp'
             />
         </div>
+
         <div className={styles.projectItem}>
             <ProjectItem
-                headline ="GreetUp"
-                srcImg_1 ='pictures/GreetUp/GreetUpStart.png'
+                headline ="Occento"
+                srcImg_1 ='pictures/Occento/Start.png'
+                srcImg_2 ='pictures/Occento/Songs.png'
                 /**Can choose only one picture too */
-                /*srcImg_1 = 'hej.png'
-                srcImg_2 = 'hej.png'*/
                 /*If the pictures should be to the right (every other should be) */
                 picsRight = {false}
-                infoText = 'En event-applikation designad för att minska ensamheten bland äldre i Australien.'
-                link = '/GreetUp'
+                infoText = 'Ett mobilspel där du och dina vänner ska gissa vilken låt texten tillhör. Dina vänner sjunger och du gissar!'
+                link = '/Occento'
+            />
+        </div>
+
+        <div className={styles.projectItem}>
+            <ProjectItem
+                headline ="Chare"
+                srcImg_1 ='pictures/Chare/Start.png'
+                srcImg_2 ='pictures/Chare/Resultat.png'
+                /*If the pictures should be to the right (every other should be) */
+                picsRight = {true}
+                infoText = 'En ride-share applikation som underlättar samåkning.'
+                link = '/'
+            />
+        </div>
+
+        <div className={styles.projectItem}>
+            <ProjectItem headline ="Lab-plant"
+                srcImg_1 ='pictures/LabPlant/Start.png'
+                /*If the pictures should be to the right (every other should be) */
+                picsRight = {false}
+                /*If picture nr 2, srcImg_2, is horisontal or vertically aligned */
+                infoText = 'Ett system för övervakning och automatiskt vattning av krukväxter!'
+                link = '/'
+            />
+        </div>
+
+        <div className={styles.projectItem}>
+            <ProjectItem headline ="Thirty"
+                srcImg_1 ='pictures/Thirty/Start.png'
+                /*If the pictures should be to the right (every other should be) */
+                picsRight = {true}
+                infoText = 'Ett tärningspel som går ut på att på ett smart sätt låsa tärningar och samla poäng.'
+                link = '/Thirty'
             />
         </div>
 

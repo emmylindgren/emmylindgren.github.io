@@ -34,14 +34,14 @@ TODO: Check this math :)
     }
 
     .projectItem:nth-child(1n) .imageWrapper{
-        margin-right: calc((var(--padding-top-and-bottom) * -1));
+        margin-right: calc(var(--padding-on-main-container)*-1);
         border-radius: 20px 0px 0px 20px;
         background-color:#FDE7EF;
     }
 
     .projectItem:nth-child(2n) .imageWrapper{
         margin-right: 5px;
-        margin-left: calc((var(--padding-top-and-bottom) * -1));
+        margin-left: calc(var(--padding-on-main-container)*-1);
         border-radius: 0px 20px 20px 0px;
         background-color:#E0FAF6;
     }
