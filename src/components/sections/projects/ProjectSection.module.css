@@ -1,9 +1,7 @@
 .projectSection{
     padding-bottom: 20px;
 }
-/*
-TODO: Check this math :) 
-*/
+
 .projectItem{
     --padding-top-and-bottom: 50px;
     padding-top: var(--padding-top-and-bottom);

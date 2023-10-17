@@ -8,7 +8,7 @@ function InfoCardSection() {
       <div className={styles.infoCardContainer}>
 
         <div className={`${styles.development} ${styles.infoCard}`}>
-            <img className={styles.cardIcon} src="icons/DevelopmentIcon.png" alt="Programmeringsikon"/>
+            <img className={styles.cardIcon} src="icons/Development.png" alt="Programmeringsikon"/>
 
             <h2 className={styles.cardHeadline}>Utveckling</h2>
             <p className={styles.cardInfotext}>Programmering och utveckling är en stor del av min utbildning 
@@ -26,7 +26,7 @@ function InfoCardSection() {
         </div>
 
         <div className={`${styles.design} ${styles.infoCard}`}>
-            <img className={styles.cardIcon} src="icons/DesignIcon.png" alt="DesignIkon"/>
+            <img className={styles.cardIcon} src="icons/Design.png" alt="DesignIkon"/>
 
             <h2 className={styles.cardHeadline}>Design</h2>
             <p className={styles.cardInfotext}>Att designa interaktiva och intuitiva gränssnitt 

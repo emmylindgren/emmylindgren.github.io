@@ -1,8 +1,23 @@
-import React from 'react'
-import {Link} from 'react-router-dom';
-import './ProjectDetails.css';
+import React from 'react';
+import styles from './ProjectDetails.module.css';
 
+/**
+ * @param {*} props | 
+ *        Title
+ *        dateText = When in time project was made. 
+ *        fieldText = Designed, implemented? Both? One? 
+ *        header_images = List of src to pictures being displayed in header. 2 or 3. 
+ *        header_color = number 1-4 saying which color header should have. According to order at starting page. 
+ * 
+ *        children = what to display at page. 
+ *  
+ * Children are expected to be surrounding div with h3 heading and p-text, followed by optional icons. 
+ * When adding icons to a child, surround with div with className={styles.icons}.
+ * The first child will be centered at it's place in page and is thought of as an introduction, is best without heading. 
+ */
 function ProjectDetails(props) {
+  /*
+  TODO: Add images at the bottom. Take names as a prop? 
   var standing = props.standing_images !== null;
   var laying = props.laying_images !== null;
 
@@ -10,79 +25,31 @@ function ProjectDetails(props) {
 
   if(laying){
     nrOfImages += props.laying_images.length;
-  }
+  }*/
   
   return (
     <>
-    <div className='detail_wrapper'>
-      <div className='detail_header'>
-        <div className='detail_headertext'>
-          <h2 className='project_headline'>{props.headline}</h2>
-          <p>{props.date}</p>
-        </div>
-        <div className='header_intro'>
-            <div>
-                <img alt="project" className='project_image' src={props.srcImg_1}/>
-            </div>
-            <p>{props.introduction}</p>
+      <div className={styles.headerWrapper} id={styles[props.header_color]}>
+        <div className={'mainContainer ' + styles.header}>
+          <div className={styles.titleContainer}>
+            <h1>{props.title}</h1>
+            <h2>{props.dateText}</h2>
+            <p>{props.fieldText}</p>
           </div>
+
+          <div className={styles.imageContainer}>
+            {props.header_images.map(element => 
+              { return <img src= {element} alt='headerImage'/>;})
+            }
+          </div>
+        </div>
+
       </div>
-
-        <h3>Bilder</h3>
-
-        <div className={(nrOfImages < 4 )? 'image_scroller snaps-inline centered':'image_scroller snaps-inline' }>
-           
-            {standing ? 
-                props.standing_images.map(element => {
-                  return <div className='scroller_element vertical'><img src= {element}/></div>;
-                }):''
-            }
-
-            {laying ? 
-                props.laying_images.map(element => {
-                  return <div className='scroller_element horisontal'><img src= {element}/></div>;
-                }):''
-            }
-
+      <div className={'mainContainer'}>
+        <div className={styles.children}>
+          {props.children}
         </div>
-
-        <div className='information_wrapper'>
-          <div className='information_text'>
-            <h3>
-              {props.assignmentHeadline ? props.assignmentHeadline : 'Vad var uppgiften?'}
-            </h3>
-            <p>{props.assignmenttext}</p>
-
-          </div>
-
-          <div className='information_text'>
-            <h3>
-              {props.subheadline2}
-            </h3>
-            <p>{props.subtext2}</p>
-
-          </div>
-
-          <div className='information_text last'>
-
-            <h3>
-              {props.developmentHeadline ? props.developmentHeadline : 'Utvecklingsprocessen'}
-            </h3>
-            <p>{props.developmenttext}</p>
-
-            <div className='development_icons'>
-              {
-                props.developmenticons.map(element => {
-                  return <img src= {element} className='development_icon'/>;
-                })
-              }
-            </div>
-
-          </div>
-
-        </div>
-  
-    </div> 
+      </div>
     </>
   )
 }
