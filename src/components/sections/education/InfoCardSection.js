@@ -16,7 +16,7 @@ function InfoCardSection() {
 
             <div className={styles.subContainer}>
               <h3 className={styles.subHeadline}>Språk</h3>
-              <p className={styles.subText}>Java, JavaScript, HTML, CSS, SQL, Haskell, C </p>
+              <p className={styles.subText}>Java, JavaScript, HTML, CSS, SQL, C, Haskell </p>
             </div>
 
             <div className={`${styles.subContainer} ${styles.subContainerRight}`}>
