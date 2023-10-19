@@ -8,6 +8,7 @@ import GoToTop from './components/GoToTop';
 import Thirty from './components/pages/Thirty';
 import GreetUp from './components/pages/GreetUp';
 import LabPlant from './components/pages/LabPlant';
+import Chare from './components/pages/Chare';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         <Route path ='/Occento' element= {<Occento/>}/>
         <Route path ='/Thirty' element= {<Thirty/>}/>
         <Route path = '/PlantInfo' element ={<LabPlant/>}/>
+        <Route path ='/Chare' element={<Chare/>}/>
       </Routes>
     </Router>
     </>

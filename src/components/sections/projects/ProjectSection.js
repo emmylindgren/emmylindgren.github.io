@@ -43,7 +43,7 @@ function ProjectSection() {
                 /*If the pictures should be to the right (every other should be) */
                 picsRight = {true}
                 infoText = 'En ride-share applikation som underlättar samåkning.'
-                link = '/'
+                link = '/Chare'
             />
         </div>
 
@@ -52,7 +52,6 @@ function ProjectSection() {
                 srcImg_1 ='pictures/LabPlant/Start.png'
                 /*If the pictures should be to the right (every other should be) */
                 picsRight = {false}
-                /*If picture nr 2, srcImg_2, is horisontal or vertically aligned */
                 infoText = 'Ett system för övervakning och automatiskt vattning av krukväxter!'
                 link = '/PlantInfo'
             />

@@ -2,19 +2,19 @@ import React from 'react';
 import ProjectDetails from '../ProjectDetails';
 import styles from '../ProjectDetails.module.css';
 
-function LabPlant() {
+function Chare() {
   return (
     <>
       <ProjectDetails 
-          title ="LabPlant"
+          title ="Chare"
           dateText = 'Våren 2022'
           fieldText = 'Design & implementation'
-          header_images = {['pictures/LabPlant/Start.png','pictures/LabPlant/PlantInfo.png','pictures/LabPlant/PlantInfo2.png']}
-          header_color = '4'
+          header_images = {['pictures/Chare/Start.png','pictures/Chare/SkapaResaFordon.png','pictures/Chare/OmResa.png']}
+          header_color = '3'
       >
         <div>
           <p>
-            Ett system för övervakning och automatiskt vattning av krukväxter! Systemet består av en Raspberry Pi 4, en ESP-32 samt några sensorer.
+            ALL TEXT SKA BYTAS !! Ett system för övervakning och automatiskt vattning av krukväxter! Systemet består av en Raspberry Pi 4, en ESP-32 samt några sensorer.
           </p>
         </div>
         <div>
@@ -52,4 +52,4 @@ function LabPlant() {
   </>
   )
 }
-export default LabPlant
+export default Chare
