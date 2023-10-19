@@ -9,6 +9,7 @@ function ProjectSection() {
         <div className={'mainContainer ' + styles.projectSection} id="projectSection">
             <h2 className='sectionHeading'>Projekt</h2>
         </div>
+        <div className={styles.test}>
         <div className={styles.projectItem}>
             <ProjectItem
                 headline ="GreetUp"
@@ -53,7 +54,7 @@ function ProjectSection() {
                 picsRight = {false}
                 /*If picture nr 2, srcImg_2, is horisontal or vertically aligned */
                 infoText = 'Ett system för övervakning och automatiskt vattning av krukväxter!'
-                link = '/'
+                link = '/PlantInfo'
             />
         </div>
 
@@ -65,6 +66,7 @@ function ProjectSection() {
                 infoText = 'Ett tärningspel som går ut på att på ett smart sätt låsa tärningar och samla poäng.'
                 link = '/Thirty'
             />
+        </div>
         </div>
 
     </>
