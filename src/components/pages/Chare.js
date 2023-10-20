@@ -14,38 +14,62 @@ function Chare() {
       >
         <div>
           <p>
-            ALL TEXT SKA BYTAS !! Ett system för övervakning och automatiskt vattning av krukväxter! Systemet består av en Raspberry Pi 4, en ESP-32 samt några sensorer.
+          Chare är en samåkningsapplikation där du kan lägga upp en resa som du ska köra för att se om det finns 
+          någon som vill åka med. Som resenär kan man enkelt söka på resor och ansöka om att få åka med, en liten bit eller hela vägen! 
           </p>
         </div>
         <div>
           <h3>Vad var uppgiften?</h3>
           <p>
-            Detta system skapades i kursen Design och Tjänsteutveckling för IoT. Kursen berörde Internet of Things och gick ut på att lära sig hantera 
-            mikrokontrollers och sensorer.  Detta var slutprojektet och det var fritt utformat, ett system som ska hjälpa människor i deras vardag med vardagliga 
-            saker. Det skulle ingå valfria sensorer, men minst två olika.  
+          På kursen Produktuveckling för mobila applikationer  var uppgiften att i en grupp arbeta med  hela designprocessen från konceptidé till
+          implementation för en idé. Idéen till applikationen fick vi som grupp komma på tillsammans. Vi var 5 personer i en grupp.  
           </p>
         </div>
         <div>
-          <h3>Vår lösning</h3>
+          <h3>Vår idé</h3>
           <p>
-            Vår lösning var LabPlant. Raspberry Pi användes som en hub för att ta emot data från en mikrokontroller: ESP32. ESP32:an var kopplad till en 
-            temperatur och fuktighets-sensor, en ljussensor, en jordfuktighetssensor samt en vattenpump. Ett gränssnitt skapades där användaren kunde välja vilken 
-            slags krukväxt sensorerna hade kopplats på. Beroende på krukväxt och sensordatan ändrades sedan ikonernas färg efter hur växten mår när det kommer till 
-            temperatur, fuktighet, ljus och jordfuktighet. Växten vattnades också om jordfuktigheten var för låg för många dagar i sträck. Men som användare 
-            kunde man också vattna växten genom systemet.  
+            Vår idé var Chare, samåkningsappen där användare kan söka bland och skapa
+            resor för att underlätta samåkning och minska mängden människor som färdas själva i
+            sina bilar.  Man kan söka efter resor, filtrera bland sökresultaten,
+            klicka in sig och läsa mer om en resa samt be om att få åka med. Vi ville göra det
+            möjligt för förarna att acceptera sina passagerare då alla inte är bekväma med att åka
+            med alla.
+            <br/><br/> 
+            Man kan även skapa och publicera egna resor. Där får du fylla
+            i mellan vilka orter du ska köra, vilken rutt du tänkt ta, vilket datum och avresetid
+            resan har, kostnad för resan samt dina resepreferenser. Andra funktioner i applikationen inkluderar utvärderingar 
+            av resor och förare, chatt-funktionalitet samt en profilsida. 
+            <br/><br/>
+            Chare är appen som ska hjälpa dig att hjälpa miljön, samtidigt som den hjälper din plånbok!
           </p>
         </div>
         <div>
           <h3>Utvecklingsprocessen</h3>
           <p>
-            För att utveckla på ESP32 användes Mongoose OS och koden skrevs i JavaScript. 
-            På Raspberry Pi användes Node.js för att sätta upp den som en hub och skapa gränssnittet. 
-            Det roliga med detta projekt var att vi även fick jobba fysiskt och faktiskt koppla upp sensorer mot vår ESP32. 
+            Eftersom att detta projekt innebar att arbeta med en idé från start till mål började vi i idéfasen. 
+            Grunden till idéen kom från tidigare arbete kring marknaden runt kollektivtrafik och samåkning. Efter detta kom 
+            designfasen, vilket alla i gruppen började med sina egna LoFi-versioner i Figma som vi sedan gemensamt arbetade 
+            ihop till en HiFi. 
+            <br/><br/>
+            Sedan var det dags att börja implementera. Då delade vi till en början upp gruppen i två delar, en som arbetade 
+            med backend och en med frontend. Back-end:en utvecklades som ett  webb-API med Microsofts ramverk för webbapplikationer 
+            ASP.NET vilket är del av .NET Core. Utöver det så användes även Entity Framework, vilket är ett ramverk som hjälper till 
+            och automatiserar mycket av kodskrivandet. MySQL Server användes som databas.
+            <br/><br/>
+            Front-end:en för vår mobilapplikation skrevs med Android-systemets inbyggda API
+            för att bygga appar, i programspråket Kotlin och i utvecklingsmiljön Android studio. Designmönstret MVVM,  Model-View-ViewModel användes för att strukturera koden. 
+            <br/><br/>
+            GitHub användes under hela utvecklingsprocessen. 
           </p>
           <div className={styles.icons}>
-            <img src='icons/MongooseOS.svg' alt='Mongoose OS'/>
-            <img src='icons/JavaScript.svg' alt='JavaScript'/>
-            <img src='icons/NodeJS.svg' alt='NodeJS'/>
+            <img src='icons/Figma.svg' alt='Figma'/>
+            <img src='icons/aspnet.svg' alt='ASP.NET'/>
+            <img src='icons/MySQL.svg' alt='MySQL'/>
+            <img src='icons/Kotlin.svg' alt='Kotlin'/>
+            <img src='icons/AndroidStudio.svg' alt='Android studio'/>
+            <a target="_blank" href="https://github.com/Savalige/Chare" rel="noreferrer">
+                <img src='icons/Github.svg' alt='githubIcon'/>
+            </a>
           </div>
         </div>
       </ProjectDetails>
