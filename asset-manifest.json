@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.87012e19.css",
-    "main.js": "/static/js/main.896995b6.js",
+    "main.js": "/static/js/main.d1760bf5.js",
     "static/media/EmmyLindgrenCV.pdf": "/static/media/EmmyLindgrenCV.dd08ba956a1f6f4dae08.pdf",
     "index.html": "/index.html",
     "main.87012e19.css.map": "/static/css/main.87012e19.css.map",
-    "main.896995b6.js.map": "/static/js/main.896995b6.js.map"
+    "main.d1760bf5.js.map": "/static/js/main.d1760bf5.js.map"
   },
   "entrypoints": [
     "static/css/main.87012e19.css",
-    "static/js/main.896995b6.js"
+    "static/js/main.d1760bf5.js"
   ]
 }
