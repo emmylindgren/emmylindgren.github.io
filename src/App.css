@@ -1,51 +1,67 @@
-/*Import of Font family Titillium Web from google.*/
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;600&display=swap');
-* {
+/*Import of Font family Montserrat from google.*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+/*
+  Light: 300
+  Regular: 400 
+  Medium: 500
+  Semi bold: 600
+*/
+:root{
+  --padding-on-main-container: 40px;
+}
+*{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
-.home,
-.services,
-.products,
-.sign-up {
-  display: flex;
-  height: 90vh;
-  align-items: center;
-  justify-content: center;
-  font-size: 3rem;
-}
-
-.services {
-  
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #fff;
-  font-size: 100px;
-}
-
-.products {
-  
-  background-position: center;
-  background-size: fill;
-  background-repeat: no-repeat;
-  color: #fff;
-  font-size: 100px;
-}
-
-.sign-up {
-  
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #fff;
-  font-size: 100px;
+h1,h2,h3,h4{
+  color:var(--notQuiteBlack);
 }
 
 p{
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 300;
+  font-size: 25px;
+}
+
+.mainContainer{
+  padding-inline: var(--padding-on-main-container);
+}
+
+.sectionHeading{
+  font-weight: 500;
+  font-size: 39px;
+  padding-top: 10px;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 1200px) {
+  p{
+    font-size: 23px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  :root{
+    --padding-on-main-container: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  p{
+    font-size: 4vw;
+  }
+  .sectionHeading{
+    padding-top: 15px;
+    font-size: 6.5vw;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .mainContainer{
+    max-width: 1800px;
+    margin: 0 auto;
+  }
 }

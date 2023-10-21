@@ -1,11 +1,12 @@
 import React from 'react';
 import '../../App.css';
-import HeroSection from '../HeroSection';
-import EducationSection from '../EducationSection';
-import InfoCardSection from '../InfoCardSection';
-import ProjectSection from '../ProjectSection';
-import Footer from '../Footer';
+import HeroSection from '../sections/hero/HeroSection';
+import EducationSection from '../sections/education/EducationSection';
+import InfoCardSection from '../sections/education/InfoCardSection';
+import ProjectSection from '../sections/projects/ProjectSection';
+import Footer from '../sections/footer/Footer';
 import { useEffect } from 'react';
+import AboutMeSection from '../sections/aboutMe/AboutMeSection';
 function Home(){
     useEffect(() => {
         document.title = 'Emmy Lindgren';
@@ -13,7 +14,7 @@ function Home(){
     return(
         <>
             <HeroSection/>
-            {/*<Cards/> = de korten som han gjorde. Kanske använda (omstylade) som projekt?*/}
+            <AboutMeSection/>
             <EducationSection id='education'/>
             <InfoCardSection/>
             <ProjectSection/>

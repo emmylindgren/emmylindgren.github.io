@@ -1,0 +1,163 @@
+/* Header */
+/* Header colors, different linears depending on where they are in the starting page. Prop! */
+#1{
+    background: linear-gradient(180deg, rgba(252, 207, 223, 0.00) 0%, rgba(252, 207, 223, 0.66) 43.62%, #FCCFDF 78.44%);
+}
+#2{
+    background: linear-gradient(180deg, rgba(205, 235, 230, 0.00) 0%, rgba(205, 235, 230, 0.66) 43.62%, #CDEBE6 78.44%);
+}
+#3{
+    background: linear-gradient(180deg, rgba(216, 252, 207, 0.00) 0%, rgba(216, 252, 207, 0.66) 43.62%, #D8FCCF 78.44%);
+}
+#4{
+    background: linear-gradient(180deg, rgba(241, 214, 237, 0.00) 0%, rgba(241, 214, 237, 0.66) 43.62%, #F1D6ED 78.44%);
+}
+/* End Header colors*/
+
+.headerWrapper{
+    min-height: 500px;
+    background: linear-gradient(180deg, rgba(252, 207, 223, 0.00) 0%, rgba(252, 207, 223, 0.66) 43.62%, #FCCFDF 78.44%);
+    display: flex;
+    justify-content: center;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1500px;
+    margin-bottom: 20px;
+}
+
+.header >* {
+    flex: 1 1 160px;
+}
+
+.titleContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.titleContainer h1{
+    font-weight: 600;
+    font-size: 60px;
+}
+.titleContainer h2{
+    font-weight: 300;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+.titleContainer p{
+    margin-bottom: 10px;
+}
+
+.imageContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+}
+
+.imageContainer img{
+    height: 375px;
+}
+
+.imageContainer img:nth-child(2n){
+    height: 450px;
+}
+/* End of header */
+
+.children{
+    --margin-top-and-bottom: 50px;
+    margin-top: var(--margin-top-and-bottom);
+    margin-bottom: var(--margin-top-and-bottom);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:80px;
+    margin-inline: 20px;
+}
+.children h3{
+    font-weight: 600;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.children p{
+    font-size: 20px;
+}
+
+.children div{
+    max-width: 750px;
+}
+.children div:nth-child(1){
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.icons {
+    margin-top: 20px;
+}
+.icons img{
+    height: 52px;
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 800px) {
+    .headerWrapper{
+        min-height: 400px;
+    }
+    .imageContainer img{
+        height: 53vw;
+    }
+    .imageContainer img:nth-child(2n){
+        height: 63vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    /* Header */
+    .imageContainer img{
+        height: 57vw;
+    }
+    
+    .imageContainer img:nth-child(2n){
+        height: 67vw;
+    }
+    .imageContainer{
+        gap:8px;
+    }
+
+    .titleContainer h1{
+        font-size: 45px;
+        align-self: flex-start;
+    }
+    .titleContainer h2{
+        font-size: 25px;
+        align-self: flex-start;
+        margin-left: 70px;
+    }
+    .titleContainer p{
+        align-self: flex-start;
+        font-size: 18px;
+    }
+    /* End of header */
+    .children{
+        margin-inline: 15px;
+        gap:5vw;
+    }
+    .children h3{
+        font-size: 5.5vw;
+    }
+    .children p{
+        font-size: 4vw;
+    }
+    .children div:nth-child(1){
+        text-align: start;
+    }
+    .icons img{
+        height: 32px;
+        margin-right: 15px;
+    }
+}

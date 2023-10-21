@@ -2,15 +2,18 @@
 * {
   -webkit-tap-highlight-color: transparent;
 }
+/*
+  TODO: Clean up this file. 
+*/
 .navbar {
   background: transparent;
   height: 120px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
-  font-size: 1.2rem;
   top: 0;
   z-index: 999;
+  max-width: 2800px;
 }
 
 .navbar-container {
@@ -19,18 +22,17 @@
   align-items: center;
   height: 80px;
   max-width: 900px;
- 
+  margin-right: 300px;
 }
 
 .fa-typo3 {
-  /*margin-left: 0.5rem;*/
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 
 .nav-menu {
   display: grid;
   grid-template-columns: repeat(5, auto);
-  grid-gap: 20px;
+  grid-gap: 25px;
   list-style: none;
   text-align: center;
   width: 100vw;
@@ -47,14 +49,16 @@
   align-items: center;
   text-decoration: none;
   padding: 0.5rem 1rem;
-  font-size: 1.5vw;
+  font-size: 25px;
   height: 100%;
+  transition: all 0.5s ease-out;
+  text-transform: uppercase;
+  font-weight: 300;
 }
 
 .nav-links:hover {
-  transition: all 0.5s ease-out;
   text-decoration: underline;
-  font-size:1.6vw;
+  font-size:1.25vw;
 }
 
 .fa-bars {
@@ -75,13 +79,6 @@
   align-items: center; 
   height: 10%;
 }
-.nav-links-icon {
-  text-align:center;
-  padding: 2rem;
-  
-  width: 100%;
-  display:table;
-}
 
 .imageIcon{
   height: 5vh;
@@ -91,7 +88,7 @@
 
 @media screen and (max-width: 1400px){
   .nav-links {
-    font-size: 2vw;
+    font-size: 1.7vw;
   }
 }
 
@@ -126,7 +123,6 @@
     top: 60px;
     left: -100%;
     opacity: 1;
-    
     align-items: center;
     justify-items: center;
     justify-content: space-evenly;
@@ -148,26 +144,19 @@
     display: flex;
     flex-direction: row;
     align-items: center; 
-    height: 10%;
-  }
-  .nav-links-icon {
-    text-align:center;
-    padding: 2rem;
-    width: 100%;
-    display:table;
+    justify-content: center;
+    gap:30px;
   }
 
-  .imageIcon{
-    height: 100%;
-    width: 100%;
-    opacity: 1;
+  .nav-links-icon {
+    color:var(--rubyRed);
+
   }
 
   .nav-links {
     text-align: center;
     color: white;
-    font-size:3.5vh;
-    padding: 2rem;
+    font-size:3vh;
     width: 100%;
     display:table;
   }
@@ -208,8 +197,6 @@
     text-decoration: none;
     font-size: 1.5rem;
     background-color: transparent;
-    
-    /*padding: 14px 20px;*/
     transition: all 0.3s ease-out;
   }
 }

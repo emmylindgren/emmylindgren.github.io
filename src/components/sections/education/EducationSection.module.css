@@ -1,0 +1,54 @@
+.educationSection h2{
+    text-align: right;
+}
+
+.educationContainer{
+    --padding-size-top: 20px; 
+    padding-top: var(--padding-size-top);
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.IDLogo{
+    width: 550px;
+}
+
+.header{
+    font-weight: 500;
+    font-size: 33px;
+    padding-top: var(--padding-size-top);
+}
+
+.educationText{
+    font-weight: 300;
+    max-width: 1000px;
+    text-align: center;
+    padding-top: var(--padding-size-top);
+    padding-inline: 10px;
+}
+
+@media screen and (max-width: 1200px) and (min-width:700px)  {
+    .educationText{
+        max-width: 800px;
+    }
+    .IDLogo{
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .IDLogo{
+        width: 80vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .header{
+        font-size: 25px;
+    }
+    .educationContainer{
+        --padding-size-top: 10px;
+    }
+}

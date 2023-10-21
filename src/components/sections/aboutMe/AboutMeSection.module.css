@@ -1,0 +1,120 @@
+@import url("../../../Colours.css");
+
+.AboutMeSection{
+    min-height: 100vh;
+}
+.container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.innerContainer{
+    margin-left: 10vw;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.aboutMeContainer{
+    height: 780px;
+    width: 780px;
+    border-radius: 50%;
+    background-color: var(--pastelGreen);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutMeText{
+    margin:20px;
+    text-align: center;
+}
+
+.smileyContainer{
+    height: 10vw;
+    width: 10vw;
+    border-radius: 50%;
+    background-color: var(--pastelGreen);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.smileyContainer p{
+    font-weight: 500;
+    transform: rotate(90deg);
+}
+
+@media screen and (max-width: 1200px) and (min-width:700px)  {
+    .AboutMeSection{
+        min-height: 0;
+    }
+    .innerContainer{
+        
+        flex-direction: column-reverse;
+    }
+    .aboutMeContainer{
+        height: 70vw;
+        width: 70vw;
+        border-radius: 50%;
+    }
+    
+    .aboutMeText p{
+        font-size: 22px;
+    }
+    
+    .smileyContainer{
+        height: 15vw;
+        width: 15vw;
+        margin-right: 20px;
+        align-self: flex-end;
+    }
+    
+    .smileyContainer p{
+        font-size: 3vw;
+    }
+}
+
+
+
+@media screen and (max-width: 700px) {
+    .AboutMeSection{
+        min-height: 0;
+    }
+    .innerContainer{
+        margin-left: 0;
+        flex-direction: column-reverse;
+    }
+    .aboutMeContainer{
+        height: 100vw;
+        width: 100vw;
+        margin-left: -20vw;
+        border-radius: 50%;
+    }
+    
+    .aboutMeText{
+        margin:20px;
+        margin-left: 25vw;
+        text-align: left;
+    }
+    .aboutMeText p {
+        font-size: 3.5vw;
+    }
+    
+    .smileyContainer{
+        height: 40vw;
+        width: 40vw;
+        border-radius: 50%;
+        margin-right: 20px;
+        align-self: flex-end;
+    }
+    
+    .smileyContainer p{
+        font-weight: 500;
+        transform: rotate(90deg);
+        font-size: 4vw;
+    }
+}
