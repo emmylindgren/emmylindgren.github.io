@@ -9,7 +9,7 @@ function LabPlant() {
           title ="LabPlant"
           dateText = 'Våren 2022'
           fieldText = 'Design & implementation'
-          header_images = {['pictures/LabPlant/Start.png','pictures/LabPlant/PlantInfo.png','pictures/LabPlant/PlantInfo2.png']}
+          header_images = {['pictures/LabPlant/start.png','pictures/LabPlant/PlantInfo.png','pictures/LabPlant/PlantInfo2.png']}
           header_color = '4'
       >
         <div>

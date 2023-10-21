@@ -53,7 +53,7 @@ function ProjectSection() {
                 /*If the pictures should be to the right (every other should be) */
                 picsRight = {false}
                 infoText = 'Ett system för övervakning och automatiskt vattning av krukväxter!'
-                link = '/PlantInfo'
+                link = '/LabPlant'
             />
         </div>
 
