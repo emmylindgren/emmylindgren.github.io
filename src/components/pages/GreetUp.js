@@ -53,7 +53,7 @@ function GreetUp() {
           </p>
           <div className={styles.icons}>
             <img src='icons/Figma.svg' alt='figmaIcon'/>
-            <img src='icons/visualStudio.svg' alt='visualStudioIcon'/>
+            <img src='icons/visualstudio.svg' alt='visualStudioIcon'/>
             <img src='icons/React.svg' alt='ReactIcon'/>
             <a target="_blank" href="https://github.com/emmylindgren/GreetUp" rel="noreferrer">
                 <img src='icons/Github.svg' alt='githubIcon'/>

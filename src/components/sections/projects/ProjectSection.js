@@ -48,8 +48,8 @@ function ProjectSection() {
         </div>
 
         <div className={styles.projectItem}>
-            <ProjectItem headline ="Lab-plant"
-                srcImg_1 ='pictures/LabPlant/Start.png'
+            <ProjectItem headline ="LabPlant"
+                srcImg_1 ='pictures/LabPlant/start.png'
                 /*If the pictures should be to the right (every other should be) */
                 picsRight = {false}
                 infoText = 'Ett system för övervakning och automatiskt vattning av krukväxter!'
